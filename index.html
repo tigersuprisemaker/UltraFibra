@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/nextWaveLogo.png" type="image/x-icon">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
-    <title>UltraFiber Internet</title>
+    <title>NextWave Internet</title>
 
     <!-- Google Fonts // Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -33,14 +35,21 @@
                     </div>
                 </div>
                 <div class="navTopRight">
-                    <button id="login" class="login" onclick="location.href='#clientArea'"><i class="fa-solid fa-user"></i>Área do cliente</button>
+                    <button id="login" class="login" onclick="location.href='#clientArea'"><i
+                            class="fa-solid fa-user"></i>Área do cliente</button>
                 </div>
             </div>
 
             <div class="navbarBottom">
                 <div class="navBottomLeft">
                     <i class="fa-solid fa-wifi"></i>
-                    <span onclick="location.href='#'">UltraFiber</span>
+                    <span onclick="location.href='#'">NextWave</span>
+                </div>
+
+                <div id="burguer" class="burguer" onclick="switchMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
 
                 <div class="navBottomRight">
@@ -52,11 +61,6 @@
                     <button id="plansBtn" class="plansBtn" onclick="location.href='#plans'">Assine já</button>
                 </div>
 
-                <div id="burguer" class="burguer">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </div>
         </nav>
     </header>
@@ -347,17 +351,6 @@
         <div>© 2025 UltraFiber Internet. Todos os direitos reservados.</div>
         <div>🇧🇷</div>
     </footer>
-
-    <script>
-        const title = document.getElementsByClassName('faqTitle');
-
-        for (let i = 0; i < title.length; i++) {
-            title[i].addEventListener('click', () => {
-                const paragraph = title[i].nextElementSibling;
-                paragraph.classList.toggle('active');
-            });
-        }
-    </script>
 </body>
 
 </html>
