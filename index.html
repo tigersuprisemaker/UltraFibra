@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>UltraFiber Internet</title>
+
+    <!-- Google Fonts // Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbarTop">
+                <div class="navTopLeft">
+                    <div class="navPhoneOne">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>0800 4248 8022</span>
+                    </div>
+                    <div class="navPhoneTwo">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(75) 8420-3871</span>
+                    </div>
+                </div>
+                <div class="navTopRight">
+                    <button id="login" class="login" onclick="location.href='#clientArea'"><i class="fa-solid fa-user"></i>Área do cliente</button>
+                </div>
+            </div>
+
+            <div class="navbarBottom">
+                <div class="navBottomLeft">
+                    <i class="fa-solid fa-wifi"></i>
+                    <span onclick="location.href='#'">UltraFiber</span>
+                </div>
+
+                <div class="navBottomRight">
+                    <a href="#plans">Planos</a>
+                    <a href="#vantages">Vantagens</a>
+                    <a href="#coverage">Cobertura</a>
+                    <a href="#doubts">Dúvidas</a>
+                    <a href="#contact">Contato</a>
+                    <button id="plansBtn" class="plansBtn" onclick="location.href='#plans'">Assine já</button>
+                </div>
+
+                <div id="burguer" class="burguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="containerOne">
+            <div class="gridC-one">
+                <h3>Fibra óptica 100% até sua casa</h3>
+                <h1>Internet ultra rápida para conectar <span>tudo</span> na sua casa.</h1>
+                <p>Planos de alta velocidade com estabilidade, suporte 24h e Wi-Fi potente para você jogar, assistir e
+                    trabalhar sem travar.</p>
+                <div class="buttonsPlans">
+                    <button id="plansOne" class="plansOne" onclick="location.href='#plans'">Ver Planos</button>
+                    <button id="plansTwo" class="plansTwo" onclick="location.href='#contact'">Falar com
+                        consultor</button>
+                </div>
+                <div class="vantages">
+                    <div>
+                        <i class="fa-solid fa-bolt"></i>
+                        <p>Instalação rápida</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-headset"></i>
+                        <p>Suporte 24/7</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <p>Conexão estável</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gridC-Two">
+                <div class="gridC-TwoBox">
+                    <h2>Simule seu plano</h2>
+                    <p>Informe alguns dados e veja a melhor opção para você.</p>
+
+                    <div class="form">
+                        <label>CEP</label>
+                        <input type="text" maxlength="9" placeholder="00000-000">
+
+                        <label>Tipo de uso</label>
+                        <select>
+                            <option value="">Residencial</option>
+                            <option value="">Trabalho / Home office</option>
+                            <option value="">Gamer</option>
+                            <option value="">Empresa</option>
+                        </select>
+
+                        <label>Quantas pessoas usam a internet?</label>
+                        <select>
+                            <option value="">1 a 2 pessoas</option>
+                            <option value="">3 a 4 pessoas</option>
+                            <option value="">5 ou mais pessoas</option>
+                        </select>
+
+                        <button>Ver recomendação</button>
+                        <div class="security">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <p>Seus dados estão seguros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerTwo" id="plans">
+            <div class="containerTwoTop">
+                <span>Planos de internet</span>
+                <h2>Escolha a velocidade ideal para você</h2>
+                <p>Todos os planos com Wi-Fi incluso, instalação rápida e suporte especializado.</p>
+            </div>
+            <div class="containerTwoGrid">
+                <div class="conTwoGrid">
+                    <span class="topPlans">Essencial</span>
+                    <h3>300 Mega</h3>
+                    <p>Perfeito para quem navega, assiste streaming em Full HD e usa redes sociais.</p>
+                    <span class="price"><span class="month">R$ </span>89<span class="month">,90/mês</span></span>
+                    <div class="description">
+                        <div>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Wi-Fi incluso</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Fibra até a resisdência</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Sem franquia de dados</p>
+                        </div>
+                    </div>
+                    <button class="btnPursche">Assinar plano</button>
+                </div>
+                <div class="conTwoGrid" id="modifyBorder">
+                    <span class="topPlans modify">Recomendado</span>
+                    <h3>500 Mega</h3>
+                    <p>Para quem faz de tudo: streaming 4K, reuniões online e games.</p>
+                    <span class="price"><span class="month">R$ </span>119<span class="month">,90/mês</span></span>
+                    <div class="description">
+                        <div>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Wi-fi Dual Band incluso</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Instalação grátis*</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Suporte prioritário</p>
+                        </div>
+                    </div>
+                    <button class="btnPursche" id="btnModify">Assinar plano</button>
+                    <p class="obs">*Consulte condições na sua região.</p>
+                </div>
+                <div class="conTwoGrid">
+                    <span class="topPlans">Power</span>
+                    <h3>1 Giga</h3>
+                    <p>Altíssimo desempenho para gamers, criadores de conteúdo e empresas.</p>
+                    <span class="price"><span class="month">R$ </span>169<span class="month">,90/mês</span></span>
+                    <div class="description">
+                        <div>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Roteador de alta performance</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Suporte VIP</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>Ideal para múltiplos dispositivos</p>
+                        </div>
+                    </div>
+                    <button class="btnPursche">Assinar plano</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerThree" id="vantages">
+            <div class="threeTitle">
+                <span>Por que a UltraFibra?</span>
+                <h2>Mais do que velocidade, experiência</h2>
+            </div>
+            <div class="threeGrid">
+                <div class="tGrid">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <h3 class="h3ThreeMod">Alta Performance</h3>
+                    <p>Fibra óptica de ponta para garantir baixíssima latência e estabilidade mesmo com vários
+                        dispositivos conectados.</p>
+                </div>
+                <div class="tGrid">
+                    <i class="fa-solid fa-house-signal"></i>
+                    <h3 class="h3ThreeMod">Wi-Fi em toda a casa</h3>
+                    <p>Roteadores modernos e opção de repetidores para levar o sinal a todos os cômodos.</p>
+                </div>
+                <div class="tGrid">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3 class="h3ThreeMod">Suporte 24h</h3>
+                    <p>Atendimento humano sempre que você precisar, por telefone, WhatsApp ou chat.</p>
+                </div>
+                <div class="tGrid">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    <h3 class="h3ThreeMod">Sem letras miúdas</h3>
+                    <p>Contratos claros, sem franquia de dados e sem surpresas na fatura.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerFour" id="coverage">
+            <div class="containerFLeft">
+                <span>Cobertura</span>
+                <h2>Estamos chegando cada vez mais perto de você</h2>
+                <p>Presente nas principais regiões da cidade e em constante expansão. Consulte a disponibilidade no seu
+                    endereço e veja os planos especiais da sua área.</p>
+                <div class="location">
+                    <span>
+                        <i class="fa-solid fa-map-marker"></i>
+                        Centro
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-map-marker"></i>
+                        Zona Norte
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-map-marker"></i>
+                        Zona Sul
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-map-marker"></i>
+                        Zona Leste
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-map-marker"></i>
+                        Zona Oeste
+                    </span>
+                </div>
+            </div>
+            <div class="containerFRight">
+                <form>
+                    <h2>Verificar disponibilidade</h2>
+                    <p>Digite seu CEP e veja se já temos cobertura ra sua região.</p>
+
+                    <label>CEP</label>
+                    <input type="text" maxlength="9" placeholder="00000-000">
+
+                    <label>Cidade</label>
+                    <input type="text" maxlength="20" placeholder="Sua cidade">
+
+                    <button>Verificar cobertura</button>
+                </form>
+            </div>
+        </div>
+        <div class="faq" id="doubts">
+            <div class="faqTop">
+                <span>Dúvidas frequentes</span>
+                <h2>Perguntas e respostas</h2>
+            </div>
+            <div class="faqGrid" id="faqGrid">
+                <div>
+                    <h3 class="faqTitle">Qual o prazo para instalação?</h3>
+                    <p class="pShow">Após a confirmação do cadastro, a instalação costuma ocorrer em até 48 horas,
+                        dependendo da disponibilidade de agenda na sua região.</p>
+                </div>
+                <div>
+                    <h3 class="faqTitle">Existe fidelidade?</h3>
+                    <p class="pShow">Temos opções com e sem fidelidade. Nos planos com fidelidade, você ganha benefícios
+                        como instalação grátis e desconto na mensalidade.</p>
+                </div>
+                <div>
+                    <h3 class="faqTitle">A internet é realmente fibra óptica?</h3>
+                    <p class="pShow">Sim! Trabalhamos com tecnologia FTTH (Fiber To The Home), levando a fibra óptica
+                        diretamente até a sua residência.</p>
+                </div>
+                <div>
+                    <h3 class="faqTitle">Posso migrar de outro provedor?</h3>
+                    <p class="pShow">Claro! Nossos consultores ajudam você em todo o processo de migração para que você
+                        não fique sem conexão.</p>
+                </div>
+            </div>
+            <div class="contact" id="contact">
+                <div class="contactLeft">
+                    <span>fale com a gente</span>
+                    <h2>Assine agora ou tire suas dúvidas</h2>
+                    <p>Preencha o formulário ao lado ou fale direto pelo WhatsApp. Nossa equipe está pronta para te
+                        atender.</p>
+                    <div class="contactBottom">
+                        <div>
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            <p>(75) 8420-3871</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <p>0800 4248 8022</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p>contato@ultrafibra.com.br</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactRight">
+                    <form>
+                        <label>Nome completo</label>
+                        <input type="text" maxlength="30" placeholder="Seu nome">
+
+                        <label>E-mail</label>
+                        <input type="email" placeholder="voce@gmail.com">
+
+                        <label>Telefone</label>
+                        <input type="text" maxlength="12" placeholder="(00) 00000-0000">
+
+                        <label>Mensagem</label>
+                        <textarea placeholder="Conte um pouco sobre o que você precisa..."></textarea>
+
+                        <button>Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+            <div class="clientArea" id="clientArea">
+                <h2>Área do cliente</h2>
+                <p>Acesse sua fatura, 2ª via, suporte e muito mais.</p>
+                <button>Entrar na área do cliente</button>
+            </div>
+    </main>
+
+    <footer>
+        <div>© 2025 UltraFiber Internet. Todos os direitos reservados.</div>
+        <div>🇧🇷</div>
+    </footer>
+
+    <script>
+        const title = document.getElementsByClassName('faqTitle');
+
+        for (let i = 0; i < title.length; i++) {
+            title[i].addEventListener('click', () => {
+                const paragraph = title[i].nextElementSibling;
+                paragraph.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+
+</html>
